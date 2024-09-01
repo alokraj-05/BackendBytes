@@ -2,7 +2,6 @@ const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", () => {
   const hamburger_icon = document.querySelector(".hamburger_icon");
   const nav_items = document.querySelector(".nav_items");
-
   if (hamburger_icon.classList.contains("fa-bars")) {
     hamburger_icon.classList.remove("fa-bars");
     hamburger_icon.classList.add("fa-xmark");
