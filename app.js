@@ -14,13 +14,13 @@ hamburger.addEventListener("click", () => {
     if (hamburger_icon.classList.contains("fa-xmark")) {
       nav_items.style.display = "block";
       // Add click event listeners to all nav items
-      const navItems = document.querySelectorAll('.nav_items li');
-      navItems.forEach(item => {
-        item.addEventListener('click', () => {
+      const navItems = document.querySelectorAll(".nav_items li");
+      navItems.forEach((item) => {
+        item.addEventListener("click", () => {
           if (window.innerWidth <= 768) {
-            nav_items.style.display = 'none';
-            hamburger_icon.classList.remove('fa-xmark');
-            hamburger_icon.classList.add('fa-bars');
+            nav_items.style.display = "none";
+            hamburger_icon.classList.remove("fa-xmark");
+            hamburger_icon.classList.add("fa-bars");
           }
         });
       });
